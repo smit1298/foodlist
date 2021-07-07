@@ -75,9 +75,9 @@ const FoodItem = () => {
               alt="food at your door step"
             />
             <div className="card-body ">
-              <span className="float">
+              <span className="justify-content-between">
                 <h4 className="card-title float-left">{card.title}</h4>
-                <h4 className="price float-right">{card.price}</h4>
+                <h2className="price float-right">{card.price}</h2className=>
               </span>
               <p className="card-subtitle float-left mt-4 pt-2">
                 {card.description}

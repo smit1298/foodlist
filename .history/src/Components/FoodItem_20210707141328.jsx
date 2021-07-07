@@ -75,7 +75,7 @@ const FoodItem = () => {
               alt="food at your door step"
             />
             <div className="card-body ">
-              <span className="float">
+              <span className="floa">
                 <h4 className="card-title float-left">{card.title}</h4>
                 <h4 className="price float-right">{card.price}</h4>
               </span>
