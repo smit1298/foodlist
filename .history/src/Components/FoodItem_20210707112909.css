@@ -1,0 +1,9 @@
+.float-left{
+    position: absolute;
+float: left;
+}
+
+.float-right{
+    float: right;
+}
+

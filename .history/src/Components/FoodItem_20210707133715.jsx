@@ -74,11 +74,9 @@ const FoodItem = () => {
               src={card.image}
               alt="food at your door step"
             />
-            <div className="card-body ">
-              <span className="float">
-                <h3 className="card-title float-left">{card.title}</h3>
+            <div className="container d-flex align-items-center justify-content-between">
+                <h3 >{card.title}</h3>
                 <h2 className="price float-right">{card.price}</h2>
-              </span>
               <p className="card-subtitle float-left mt-4 pt-2">
                 {card.description}
               </p>

@@ -1,0 +1,12 @@
+.float-left {
+  position: absolute;
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.card-img-top {
+    border-radius-t: 0 25px;
+}

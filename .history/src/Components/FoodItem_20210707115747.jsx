@@ -52,15 +52,6 @@ const FoodItem = () => {
       text: "Lorem ipsum dolor sint, molestiae  lorem  eum nihil laborum soluta?  Quia, vero error.Lorem ipsum dolor sint, molestiae  lorem  eum nihil laborum soluta?  Quia, vero error",
       rating: 4,
     },
-    {
-      image:
-        "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/processed-food700-350-e6d0f0f.jpg?quality=90&resize=385%2C350",
-      title: "Rose Muffen",
-      price: "12$",
-      description: "served with french + fries",  
-      text: "Lorem ipsum dolor sint, molestiae  lorem  eum nihil laborum soluta?  Quia, vero error.Lorem ipsum dolor sint, molestiae  lorem  eum nihil laborum soluta?  Quia, vero error",
-      rating: 4,
-    },
     
   ];
 
@@ -74,23 +65,27 @@ const FoodItem = () => {
               src={card.image}
               alt="food at your door step"
             />
-            <div className="card-body ">
+            <div className="card-body">
               <span className="float">
-                <h3 className="card-title float-left">{card.title}</h3>
+                <h2 className="card-title float-left">{card.title}</h2>
                 <h2 className="price float-right">{card.price}</h2>
               </span>
-              <p className="card-subtitle float-left mt-4 pt-2">
+              <p className="card-subtitle float-left mt-4 mb-2 text-muted">
                 {card.description}
               </p>
             </div>
 
             <div className="card-text">
-              {card.text}
+              <div className="text">{card.text}</div>
             </div>
 
-            <div className="container d-flex align-items-center justify-content-between">
-                <Icon className="icon" icon={sharpStarRate}/>
-                <img className="plus" src={Logo}/>
+            <div className="float1">
+              <div>
+                <InlineIcon className="rate" icon={sharpStarRate} />
+              </div>
+              <div>
+                <img className="more" src={Logo} />
+              </div>
             </div>
           </div>
         </div>
@@ -106,4 +101,3 @@ const FoodItem = () => {
 };
 
 export default FoodItem;
-// codedrunz.com

@@ -74,7 +74,7 @@ const FoodItem = () => {
               src={card.image}
               alt="food at your door step"
             />
-            <div className="card-body ">
+            <div className="card-body">
               <span className="float">
                 <h3 className="card-title float-left">{card.title}</h3>
                 <h2 className="price float-right">{card.price}</h2>
@@ -88,7 +88,7 @@ const FoodItem = () => {
               {card.text}
             </div>
 
-            <div className="container d-flex align-items-center justify-content-between">
+            <div className="d-flex align-items-center justify-content-between">
                 <Icon className="icon" icon={sharpStarRate}/>
                 <img className="plus" src={Logo}/>
             </div>

@@ -1,0 +1,19 @@
+.float-left {
+  position: absolute;
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.card-img-top {
+    border-radius: 0px 25px 0px 25px !important;
+}
+.card-subtitle{
+    text-align: left !important;
+}
+.card-text{
+    text-align: left !important;
+    margin-left: 5px !important;
+}
