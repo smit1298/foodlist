@@ -34,8 +34,8 @@ const FoodItem = ({ card }) => {
             {card.description}
           </div>
 
-          <div style={{display:'flex',justifyContent:'space-between'}} >
-            <Icon className="star" icon={sharpStarRate} />
+          <div style={{display:'flex',}} >
+            <Icon icon={sharpStarRate} />
             <div className="plus">
               <Icon className='icon' icon={bxPlus} color="white" />
             </div>

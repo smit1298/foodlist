@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import sharpStarRate from "@iconify-icons/ic/sharp-star-rate";
 import bxPlus from "@iconify-icons/bx/bx-plus";
 import "./FoodItem.css";
@@ -34,10 +34,10 @@ const FoodItem = ({ card }) => {
             {card.description}
           </div>
 
-          <div style={{display:'flex',justifyContent:'space-between'}} >
-            <Icon className="star" icon={sharpStarRate} />
+          <div className="container d-flex align-items-center justify-content-between">
+            <Icon icon={sharpStarRate} />
             <div className="plus">
-              <Icon className='icon' icon={bxPlus} color="white" />
+              <Icon icon={bxPlus} color="white" />
             </div>
           </div>
         </div>

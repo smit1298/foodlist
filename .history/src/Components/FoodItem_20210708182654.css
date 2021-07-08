@@ -25,22 +25,15 @@
 }
 
 .plus {
-  position: relative !important;
+  position: relative;
   border: 1px solid #eb9605;
   border-radius: 15px 0px 0px 0px;
   height: 60px;
   width: 60px;
-  /* margin-right: -25px !important; */
+  margin-right: -25px !important;
   background-color: #eb9605;
 }
 
-.star{
-  margin-left: 14px;
-}
-
 .icon {
-  position: absolute !important;
-  font-size: xx-large;
-  left: 25% !important;
-  top: 30%
-}
+  position: absolute;
+padding-left: 100px;}

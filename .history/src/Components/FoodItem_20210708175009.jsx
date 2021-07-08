@@ -1,7 +1,8 @@
 import React from "react";
 import { Icon, InlineIcon } from "@iconify/react";
 import sharpStarRate from "@iconify-icons/ic/sharp-star-rate";
-import bxPlus from "@iconify-icons/bx/bx-plus";
+import { Icon, InlineIcon } from '@iconify/react';
+import plusSquareFill from '@iconify-icons/bi/plus-square-fill';
 import "./FoodItem.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -23,27 +24,16 @@ const FoodItem = ({ card }) => {
             <p className="card-subtitle float-left mt-4 pt-2">{card.strMeal}</p>
           </div>
 
-          <div
-            className="card-text h-20"
-            style={{
-              overflow: "hidden",
-              height: "5em",
-              textOverflow: "ellipsis",
-            }}
-          >
-            {card.description}
-          </div>
+          <div className="card-text h-20" style={{overflow:'hidden',height:'5em',textOverflow:'ellipsis'}}>{card.description}</div>
 
-          <div style={{display:'flex',justifyContent:'space-between'}} >
-            <Icon className="star" icon={sharpStarRate} />
-            <div className="plus">
-              <Icon className='icon' icon={bxPlus} color="white" />
-            </div>
-          </div>
+          <div className="container d-flex align-items-center justify-content-between">
+            <Icon icon={sharpStarRate} />
+            <Icon icon={plusSquareFill} />          </div>
         </div>
       </div>
     </div>
   );
+  
 };
 
 export default FoodItem;

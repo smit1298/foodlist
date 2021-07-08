@@ -34,13 +34,9 @@
   background-color: #eb9605;
 }
 
-.star{
-  margin-left: 14px;
-}
-
 .icon {
   position: absolute !important;
-  font-size: xx-large;
-  left: 25% !important;
-  top: 30%
+  font-size: x-large;
+  left: 50% !important;
+  top:40%
 }
