@@ -1,0 +1,38 @@
+.card{
+  border-radius: 0px 25px 0px 25px !important;
+  box-shadow: silver;
+}
+.float-left {
+  position: absolute;
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.card-img-top {
+  border-radius: 0px 25px 0px 25px !important;
+}
+.card-subtitle {
+  text-align: left !important;
+}
+.card-text {
+  text-align: left !important;
+  margin-left: 15px !important;
+  margin-top: 30px !important;
+}
+.icon {
+  position: relative;
+  /* margin-right: -25px !important; */
+  height: 60px;
+  width: 60px;
+  color: white;
+}
+
+.plus {
+  border: 1px solid red;
+    border-radius: 15px 0px 0px 0px;
+  margin-right: -25px !important;
+background-color: red;
+}
