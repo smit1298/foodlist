@@ -25,12 +25,19 @@
   margin-top: 30px !important;
 }
 
+.card-text p {
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .plus {
   position: relative !important;
   border: 1px solid #eb9605;
   border-radius: 15px 0px 0px 0px;
   height: 70px;
   width: 80px;
+  /* margin-right: -25px !important; */
   background-color: #eb9605;
 }
 

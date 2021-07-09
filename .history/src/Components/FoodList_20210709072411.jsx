@@ -32,7 +32,7 @@ const FoodList = () => {
         setLoading(false);
       });
         
-    }, 2000);
+    }, 5000);
     
    
   }, []);

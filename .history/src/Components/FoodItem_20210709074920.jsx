@@ -30,10 +30,10 @@ const FoodItem = ({ card }) => {
               className="card-text h-20 mb-4"
               style={{
                 display: "-webkit-box",
-                webkitLineClamp: "3",
+                webkitLineClamp: "",
                 webkitBoxOrient: "vertical",
                 overflow: "hidden",
-                paddingBottom: "-5rem"
+                paddingBottom: "4rem"
               }}
             >
               {card.description}

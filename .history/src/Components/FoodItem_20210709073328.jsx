@@ -29,11 +29,9 @@ const FoodItem = ({ card }) => {
             <div
               className="card-text h-20 mb-4"
               style={{
-                display: "-webkit-box",
-                webkitLineClamp: "3",
-                webkitBoxOrient: "vertical",
-                overflow: "hidden",
-                paddingBottom: "-5rem"
+                whiteSpace: nowrap,
+  overflow: hidden,
+  textOverflow: ellipsis
               }}
             >
               {card.description}

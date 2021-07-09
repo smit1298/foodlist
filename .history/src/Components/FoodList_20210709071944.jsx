@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Offline, Online } from "react-detect-offline";
+
 import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
@@ -27,12 +27,12 @@ const FoodList = () => {
         setLoading(false);
       })
       .catch(function (error) {
-       
+          
         console.log(error);
         setLoading(false);
       });
         
-    }, 2000);
+    }, 5000);
     
    
   }, []);

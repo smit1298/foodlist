@@ -27,12 +27,17 @@ const FoodList = () => {
         setLoading(false);
       })
       .catch(function (error) {
-       
+        const App = () => (
+          <div>
+            <Online>Only shown when you're online</Online>
+            <Offline>Only shown offline (surprise!)</Offline>
+          </div>
+        );
         console.log(error);
         setLoading(false);
       });
         
-    }, 2000);
+    }, 5000);
     
    
   }, []);

@@ -27,12 +27,11 @@ const FoodList = () => {
         setLoading(false);
       })
       .catch(function (error) {
-       
-        console.log(error);
+        
         setLoading(false);
       });
         
-    }, 2000);
+    }, 5000);
     
    
   }, []);

@@ -29,11 +29,9 @@ const FoodItem = ({ card }) => {
             <div
               className="card-text h-20 mb-4"
               style={{
-                display: "-webkit-box",
-                webkitLineClamp: "3",
-                webkitBoxOrient: "vertical",
+                whiteSpace: "nowrap",
                 overflow: "hidden",
-                paddingBottom: "-5rem"
+                textOverflow: "ellipsis"
               }}
             >
               {card.description}
@@ -53,4 +51,3 @@ const FoodItem = ({ card }) => {
 };
 
 export default FoodItem;
-

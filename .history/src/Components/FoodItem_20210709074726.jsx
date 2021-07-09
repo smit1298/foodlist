@@ -32,8 +32,8 @@ const FoodItem = ({ card }) => {
                 display: "-webkit-box",
                 webkitLineClamp: "3",
                 webkitBoxOrient: "vertical",
-                overflow: "hidden",
-                paddingBottom: "-5rem"
+                whiteSpace: "nowrap",
+                textOverflow: "ellipsis"
               }}
             >
               {card.description}

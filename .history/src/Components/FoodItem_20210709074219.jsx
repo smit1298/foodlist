@@ -27,13 +27,13 @@ const FoodItem = ({ card }) => {
             </div>
 
             <div
-              className="card-text h-20 mb-4"
+              className="card-text h-80 mb-4"
               style={{
-                display: "-webkit-box",
-                webkitLineClamp: "3",
-                webkitBoxOrient: "vertical",
                 overflow: "hidden",
-                paddingBottom: "-5rem"
+                height: "5em",
+                textOverflow: "clip",
+                whiteSpace: "nowrap",
+                textOverflow: "ellipsis"
               }}
             >
               {card.description}
