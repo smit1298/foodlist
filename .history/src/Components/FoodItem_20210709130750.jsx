@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const FoodItem = ({ card }) => {
   return (
     <Fragment>
-      <div className="col-lg-4  col-md-6 mt-5 ml-5 mr-5">
+      <div className="col-lg-4  col-md-6 mt-6 ml-6 m">
         <div className="card-deck">
           <div className="card">
             <img
