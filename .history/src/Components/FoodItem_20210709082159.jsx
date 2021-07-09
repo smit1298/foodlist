@@ -28,7 +28,9 @@ const FoodItem = ({ card }) => {
 
             <div
               className="card-text h-20 mb-4"
-             
+              style={{
+                
+              }}
             >
               {card.description}
             </div>

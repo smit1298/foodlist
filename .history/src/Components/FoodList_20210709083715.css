@@ -1,0 +1,9 @@
+.btn{
+    backgroundolor: "#eb9605",
+    color: "#fff",
+    border: "1px solid #eb9605",
+    borderRadius: "25px",
+    height: "40px",
+    paddingLeft: "25px",
+    paddingRight: "25px",
+  }

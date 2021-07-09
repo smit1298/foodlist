@@ -51,15 +51,16 @@ const FoodList = () => {
       );
     }
     if(offline){
-      return(
-        <Offline>You're offline right now. Check your connection.</Offline>
-      )
+      return
+      
     }
-      }
+    
+  }
 
   return (
     <div className="container">
       <div className="row">
+      <Offline>You're offline right now. Check your connection.</Offline>
         {foodItem.map((item, index) =>
           index < 6 ? <FoodItem key={item.id} card={item} /> : ""
         )}

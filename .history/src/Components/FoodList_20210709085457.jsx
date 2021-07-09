@@ -39,23 +39,11 @@ const FoodList = () => {
    
   }, []);
 
-  if (loading || offline) {
-    if(loading){
-      return (
-        <div className="container">
-          <div className="row">
-            <Spinner className="spin" animation="border" role="status">
-            </Spinner>
-          </div>
-        </div>
-      );
-    }
-    if(offline){
-      return(
-        <Offline>You're offline right now. Check your connection.</Offline>
-      )
-    }
-      }
+  if (offline) {
+    return (
+      <Offline>You're offline right now. Check your connection.</Offline>
+    );
+  }
 
   return (
     <div className="container">

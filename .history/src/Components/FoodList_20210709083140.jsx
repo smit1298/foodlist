@@ -3,7 +3,6 @@ import { Offline } from "react-detect-offline";
 import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
-import "./FoodList.css";
 
 const FoodList = () => {
   // const foodItem =[ {
@@ -18,7 +17,6 @@ const FoodList = () => {
 
   const [foodItem, setFoodItem] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [offline, setOffline] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,10 +25,10 @@ const FoodList = () => {
       .then(function (response) {
         setFoodItem(response.data.data.meals);
         setLoading(false);
-        setOffline(false)
       })
       .catch(function (error) {
-               console.log(error);
+       
+        console.log(error);
         setLoading(false);
       });
         
@@ -39,32 +37,29 @@ const FoodList = () => {
    
   }, []);
 
-  if (loading || offline) {
-    if(loading){
-      return (
-        <div className="container">
-          <div className="row">
-            <Spinner className="spin" animation="border" role="status">
-            </Spinner>
-          </div>
+  if (loading) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Spinner animation="border" role="status">
+          </Spinner>
         </div>
-      );
-    }
-    if(offline){
-      return(
-        <Offline>You're offline right now. Check your connection.</Offline>
-      )
-    }
-      }
+      </div>
+    );
+  }
 
   return (
     <div className="container">
       <div className="row">
+      <Offline>You're offline right now. Check your connection.</Offline>
         {foodItem.map((item, index) =>
           index < 6 ? <FoodItem key={item.id} card={item} /> : ""
         )}
         <div className="btn pt-4 pb-3">
-          <button>
+          <button
+            style={{
+            }}
+          >
             Learn More
           </button>
         </div>

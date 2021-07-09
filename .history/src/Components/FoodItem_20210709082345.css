@@ -23,11 +23,11 @@
   text-align: left !important;
   margin-left: 15px !important;
   margin-top: 30px !important;
-  display:-webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  padding-bottom: -5rem;
+  display: -webkit-box;
+                webkitLineClamp: 3",
+                webkitBoxOrient: "vertical",
+                overflow: "hidden",
+                paddingBottom: "-5rem"
 }
 
 .plus {
@@ -39,7 +39,7 @@
   background-color: #eb9605;
 }
 
-.star {
+.star{
   margin-left: 14px;
 }
 
@@ -47,5 +47,5 @@
   position: absolute !important;
   font-size: xx-large;
   left: 25% !important;
-  top: 30%;
+  top: 30%
 }

@@ -39,27 +39,32 @@ const FoodList = () => {
    
   }, []);
 
-  if (loading || offline) {
-    if(loading){
-      return (
-        <div className="container">
-          <div className="row">
-            <Spinner className="spin" animation="border" role="status">
-            </Spinner>
-          </div>
+  if (loading) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Spinner className="spin" animation="border" role="status">
+          </Spinner>
         </div>
-      );
-    }
-    if(offline){
-      return(
-        <Offline>You're offline right now. Check your connection.</Offline>
-      )
-    }
-      }
+      </div>
+    );
+  }
 
   return (
     <div className="container">
       <div className="row">
+      if (offlo) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Spinner className="spin" animation="border" role="status">
+          </Spinner>
+        </div>
+      </div>
+    );
+  }
+
+      <Offline>You're offline right now. Check your connection.</Offline>
         {foodItem.map((item, index) =>
           index < 6 ? <FoodItem key={item.id} card={item} /> : ""
         )}

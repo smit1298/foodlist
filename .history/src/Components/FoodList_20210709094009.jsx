@@ -52,10 +52,11 @@ const FoodList = () => {
     }
     if(offline){
       return(
-        <Offline>You're offline right now. Check your connection.</Offline>
+
       )
     }
-      }
+    
+  }
 
   return (
     <div className="container">
