@@ -10,7 +10,8 @@ const FoodList = () => {
   const [loading, setLoading] = useState(true);
   const [offline, setOffline] = useState(true);
 
-  
+use
+
   useEffect(() => {
     axios
       .get("https://asm-dev-api.herokuapp.com/api/v1/food")
