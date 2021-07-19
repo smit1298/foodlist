@@ -10,9 +10,10 @@ const FoodList = () => {
   const [loading, setLoading] = useState(true);
   const [offline, setOffline] = useState(true);
 
+  
   useEffect(() => {
     axios
-      .get("https://asm-dev-api.herokuapp.com/api/v1/food")
+      .get("https://https://asm-dev-api.herokuapp.com/api/v1/food")
       .then(function (response) {
         setFoodItem(response.data.data.meals);
         setLoading(false);
@@ -44,7 +45,7 @@ const FoodList = () => {
           <h2 className="offline">
             You're offline right now. Check your connection and reload the
             foodlist page.
-          </h2>{" "}
+          </h2>
         </Offline>
       );
     }
