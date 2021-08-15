@@ -6,4 +6,5 @@
     "title": "BeaverTails",
     "price": "$12",
     "ratings": 4
-}
+},
+

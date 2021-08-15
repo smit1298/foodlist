@@ -6,4 +6,13 @@
     "title": "BeaverTails",
     "price": "$12",
     "ratings": 4
+},
+{
+     "id": "52928",
+    "strMeal": "Ceviche",
+    "strMealThumb": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cebiche_de_corvina.JPG",
+    "title": "BeaverTails",
+    "price": "$12",
+    "ratings": 4
 }
+
