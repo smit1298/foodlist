@@ -4,7 +4,7 @@ import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
 import "./FoodList.css";
-import has from "./api";
+import has from "./api"
 
 const FoodList = () => {
   const [foodItem, setFoodItem] = useState([]);
@@ -12,24 +12,19 @@ const FoodList = () => {
   const [offline, setOffline] = useState(true);
 
   useEffect(() => {
-    
-    setFoodItem(has.data);
+      .get("./api.json")
+      .then(function (response) {
+
+        console.log(response)
+
+        setFoodItem(response.data);
         setLoading(false);
         setOffline(false);
-    // axios
-    //   .get("./api.json")
-    //   .then(function (response) {
-
-    //     console.log(response)
-
-    //     setFoodItem(response.data);
-    //     setLoading(false);
-    //     setOffline(false);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //     setLoading(false);
-    //   });
+      })
+      .catch(function (error) {
+        console.log(error);
+        setLoading(false);
+      });
   }, []);
 
   if (loading || offline) {

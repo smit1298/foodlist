@@ -4,7 +4,6 @@ import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
 import "./FoodList.css";
-import has from "./api";
 
 const FoodList = () => {
   const [foodItem, setFoodItem] = useState([]);
@@ -13,23 +12,23 @@ const FoodList = () => {
 
   useEffect(() => {
     
-    setFoodItem(has.data);
+var reader = new FileReader()
+
+
+    axios
+      .get("./api.json")
+      .then(function (response) {
+
+        console.log(response)
+
+        setFoodItem(response.data);
         setLoading(false);
         setOffline(false);
-    // axios
-    //   .get("./api.json")
-    //   .then(function (response) {
-
-    //     console.log(response)
-
-    //     setFoodItem(response.data);
-    //     setLoading(false);
-    //     setOffline(false);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //     setLoading(false);
-    //   });
+      })
+      .catch(function (error) {
+        console.log(error);
+        setLoading(false);
+      });
   }, []);
 
   if (loading || offline) {

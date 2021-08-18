@@ -13,7 +13,7 @@ const FoodList = () => {
 
   useEffect(() => {
     
-    setFoodItem(has.data);
+    setFoodItem(response.data);
         setLoading(false);
         setOffline(false);
     // axios

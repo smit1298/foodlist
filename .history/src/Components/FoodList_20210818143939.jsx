@@ -12,10 +12,10 @@ const FoodList = () => {
   const [offline, setOffline] = useState(true);
 
   useEffect(() => {
-    
+    console.log(has);
     setFoodItem(has.data);
-        setLoading(false);
-        setOffline(false);
+    setLoading(false);
+    setOffline(false);
     // axios
     //   .get("./api.json")
     //   .then(function (response) {

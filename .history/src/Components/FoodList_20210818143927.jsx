@@ -13,6 +13,7 @@ const FoodList = () => {
 
   useEffect(() => {
     
+    co ns
     setFoodItem(has.data);
         setLoading(false);
         setOffline(false);

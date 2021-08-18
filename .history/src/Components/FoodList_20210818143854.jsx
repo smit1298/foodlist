@@ -13,23 +13,23 @@ const FoodList = () => {
 
   useEffect(() => {
     
-    setFoodItem(has.data);
+    setFoodItem(response.data);
         setLoading(false);
         setOffline(false);
-    // axios
-    //   .get("./api.json")
-    //   .then(function (response) {
+    axios
+      .get("./api.json")
+      .then(function (response) {
 
-    //     console.log(response)
+        console.log(response)
 
-    //     setFoodItem(response.data);
-    //     setLoading(false);
-    //     setOffline(false);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //     setLoading(false);
-    //   });
+        setFoodItem(response.data);
+        setLoading(false);
+        setOffline(false);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setLoading(false);
+      });
   }, []);
 
   if (loading || offline) {
