@@ -1,4 +1,4 @@
-const dish = {
+const  = {
     "data": [
         {
             "id": "52928",
@@ -57,5 +57,5 @@ const dish = {
     ]
 }
 
-export default dish;
+export default has;
 

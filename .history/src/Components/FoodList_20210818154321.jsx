@@ -4,7 +4,7 @@ import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
 import "./FoodList.css";
-import dish from "./api";
+import s from "./api";
 
 const FoodList = () => {
   const [foodItem, setFoodItem] = useState([]);

@@ -4,7 +4,7 @@ import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import FoodItem from "./FoodItem";
 import "./FoodList.css";
-import dish from "./api";
+import has from "./api";
 
 const FoodList = () => {
   const [foodItem, setFoodItem] = useState([]);
@@ -13,7 +13,7 @@ const FoodList = () => {
 
   useEffect(() => {
     
-    setFoodItem(dish.data);
+    setFoodItem(s.data);
         setLoading(false);
         setOffline(false);
     // axios

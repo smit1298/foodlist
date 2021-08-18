@@ -57,5 +57,5 @@ const dish = {
     ]
 }
 
-export default dish;
+export default idsh;
 
