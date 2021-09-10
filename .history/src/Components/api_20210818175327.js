@@ -53,8 +53,8 @@ const dish = {
             "title": "Tacos",
             "price": "$20",
             "ratings": 4
-        },
-    {
+        }
+    ]{
         "id": "52928",
         "strMeal": "BeaverTails",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
@@ -108,9 +108,7 @@ const dish = {
         "price": "$20",
         "ratings": 4
     }
-]
 }
-
 
 export default dish;
 

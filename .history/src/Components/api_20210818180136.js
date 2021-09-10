@@ -107,10 +107,9 @@ const dish = {
         "title": "Tacos",
         "price": "$20",
         "ratings": 4
-    }
-]
+    }]
 }
-
+]
 
 export default dish;
 

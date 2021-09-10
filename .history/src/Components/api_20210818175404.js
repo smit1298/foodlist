@@ -108,9 +108,7 @@ const dish = {
         "price": "$20",
         "ratings": 4
     }
-]
 }
-
 
 export default dish;
 
